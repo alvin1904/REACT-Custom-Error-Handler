@@ -1,3 +1,6 @@
+/* CUSTOM ERROR HANDLER - Alvin Varghese */
+/* https://github.com/alvin1904 */
+
 export const themes = {
   dark: "dark",
   light: "light",

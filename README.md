@@ -1,16 +1,20 @@
-####1. IMPORT THE CSS FILE IN \_app.js like this
+`I made it for me, but you can have it too`
+
+#### 1. IMPORT THE CSS FILE IN \_app.js like this
 
 ```javascript
 import "@/components/ErrorHandler/ErrorHandler.css";
 ```
 
-####2. COPY THE ERRORHANDLER COMPONENT FOLDER ENTIRELY TO NEW PROJECT
+#### 2. COPY THE ERRORHANDLER COMPONENT FOLDER ENTIRELY TO NEW PROJECT
+
+[Download from here](https://drive.google.com/drive/folders/104WDwaRZFRqx0GWIaFdS9OeS0ddZObkj?usp=sharing) & rename the folder to ErrorHandler and place it at: 
 
 ```
 @/components/ErrorHandler
 ```
 
-####3. SAMPLE SNIPPET
+#### 3. SAMPLE SNIPPET
 
 ```javascript
 //ERROR HANDLER START
@@ -29,13 +33,13 @@ useEffect(() => {
 //ERROR HANDLER END
 ```
 
-####4. SAMPLE PLACING
+#### 4. SAMPLE PLACING
 
 ```javascript
 <ErrorHandler show={show} {...message} />
 ```
 
-####5. SAMPLE FN CALLS
+#### 5. SAMPLE FN CALLS
 
 ```javascript
   onClick={() =>
