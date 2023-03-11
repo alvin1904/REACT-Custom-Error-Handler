@@ -1,12 +1,9 @@
-import { useEffect, useState } from "react";
-import ErrorHandler from "@/components/ErrorHandler/ErrorHandler";
-import {
-  types,
-  themes,
-  defaultSettings,
-} from "@/components/ErrorHandler/config";
+// IMPORT THE CSS FILE IN _app.js
+// import "@/components/ErrorHandler/ErrorHandler.css";
 
-export default function HomeComp() {
+// COPY THE ERROR HANDLER FOLDER ENTIRELY TO NEW PROJECT
+
+// SAMPLE SNIPPET
   const [show, setShow] = useState(false);
   const [message, setMessage] = useState({
     message: "",
@@ -28,15 +25,13 @@ export default function HomeComp() {
     }
   }, [show]);
 
-  return (
-    <div>
-      <ErrorHandler show={show} {...message} />
-      <br></br>
-      HOME
-      <br></br>
-      <button className="btn" onClick={() => showMessage()}>
-        Show/Hide
-      </button>
-    </div>
-  );
-}
+
+// SAMPLE PLACING
+  <ErrorHandler show={show} {...message} />
+
+
+// SAMPLE CALLING
+  onClick={() =>
+    showMessage("Server is down", themes.light, types.warning)
+  }
+

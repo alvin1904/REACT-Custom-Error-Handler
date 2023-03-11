@@ -10,9 +10,9 @@ export const types = {
 };
 export const defaultSettings = {
   show: false,
-  themes: "light",
+  themes: "dark",
   types: "error",
-  message: "We ran into some problem. Sorry for the inconvinience",
+  message: "",
 };
 
 // IMPORT THE CSS FILE IN _app.js

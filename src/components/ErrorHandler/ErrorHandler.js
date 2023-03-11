@@ -4,13 +4,12 @@ import {
   MdWarning,
   MdInfo,
 } from "react-icons/md";
-import { defaultSettings } from "./config";
 
 export default function ErrorHandler({
-  show = defaultSettings.show,
-  themes = defaultSettings.themes,
-  types = defaultSettings.types,
-  message = defaultSettings.message,
+  show,
+  themes,
+  types,
+  message = "We ran into some problem. Sorry for the inconvinience",
 }) {
   const icons = {
     error: MdError,
@@ -22,12 +21,12 @@ export default function ErrorHandler({
   const display = <Icon size={25} className={`${types}1904`} />;
   return (
     <div
-      className={`error_handler_1904 ${
-        show && "show1904"
-      } ${themes}1904 ${types}1904border`}
+      className={`error_handler_1904 ${show && "show1904"} ${
+        themes ? themes : ""
+      }1904 ${types ? types : ""}1904border`}
     >
       <div className="error_img_1904">{display}</div>
-      <div>{message}</div>
+      <div>{message && message}</div>
     </div>
   );
 }
