@@ -10,44 +10,7 @@ export const types = {
 };
 export const defaultSettings = {
   show: false,
-  themes: "dark",
-  types: "error",
-  message: "",
+  themes: themes.dark,
+  types: types.error,
+  message: "We ran into some problem. Sorry for the inconvinience",
 };
-
-// IMPORT THE CSS FILE IN _app.js
-// import "@/components/ErrorHandler/ErrorHandler.css";
-
-// COPY THE ERROR HANDLER FOLDER ENTIRELY TO NEW PROJECT
-
-// SAMPLE SNIPPET
-/*--------------
-  const [show, setShow] = useState(false);
-  const [message, setMessage] = useState({
-    message: "",
-    themes: themes.light,
-    types: types.error,
-  });
-  const showMessage = (text, theme, type) => {
-    text && setMessage({ message: text, themes: theme, types: type });
-    setShow(true);
-  };
-  useEffect(() => {
-    if (show) {
-      const timeout = setTimeout(() => setShow(false), 3000);
-      return () => clearTimeout(timeout);
-    }
-  }, [show]);
---------------*/
-
-// SAMPLE PLACING
-/*--------------
-  <ErrorHandler show={show} {...message} />
---------------*/
-
-// SAMPLE CALLING
-/*--------------
-  onClick={() =>
-    showMessage("Server is down", themes.light, types.warning)
-  }
---------------*/

@@ -4,12 +4,13 @@ import {
   MdWarning,
   MdInfo,
 } from "react-icons/md";
+import { defaultSettings } from "./config";
 
 export default function ErrorHandler({
-  show,
-  themes,
-  types,
-  message = "We ran into some problem. Sorry for the inconvinience",
+  show = defaultSettings.show,
+  themes = defaultSettings.themes,
+  types = defaultSettings.types,
+  message = defaultSettings.message,
 }) {
   const icons = {
     error: MdError,
