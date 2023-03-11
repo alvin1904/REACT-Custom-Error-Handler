@@ -36,7 +36,7 @@ useEffect(() => {
 #### 4. SAMPLE PLACING
 
 ```javascript
-<ErrorHandler show={show} {...message} />
+<ErrorHandler show={show} {...messageProps} />
 ```
 
 #### 5. SAMPLE FN CALLS
